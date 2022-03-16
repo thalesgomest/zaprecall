@@ -3,7 +3,82 @@ body {
   sans-serif;
   font-family: 'Righteous',
   cursive;
-
   background-color: #FB6B6B;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Home Page */
+
+.home-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page h1 {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+  color: #FFFFFF;
+}
+
+.home-page img {
+  width: 55px;
+  height: 65px;
+  margin-bottom: 10px;
+}
+
+.home-page button {
+  width: 141px;
+  height: 31px;
+  background: #FFFFFF;
+  border: 1px solid #D70900;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin-top: 73px;
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color:#D70900;
+
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 19px;
+}
+
+header img {
+  width: 26px;
+  height: 30px;
+  margin-right: 7px;
+}
+
+header h1 {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.012em;
+  color: #FFFFFF;
 
 }
