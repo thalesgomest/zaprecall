@@ -12,7 +12,7 @@ const questions = [
         question: "O React é __ ",
         answer: "uma biblioteca JavaScript para construção de interfaces"
     },
-        {
+    {
         question: "Componentes devem iniciar com __",
         answer: "letra maiúscula"
     },
@@ -92,10 +92,10 @@ const flashcards = [
     }
 ]
 
-for (let i=0; i<questionsShuffled.length; i++) {
-    flashcards[i].question = questionsShuffled[i].question;
-    flashcards[i].answer = questionsShuffled[i].answer;
-}
+questionsShuffled.forEach((question, index) => {
+    flashcards[index].question = question.question;
+    flashcards[index].answer = question.answer;
+})
 
 
 function DeckFlashCards() {

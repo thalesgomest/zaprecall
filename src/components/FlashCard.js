@@ -7,6 +7,23 @@ function FlashCard(props) {
 
     const [stage, setStage] = useState("questionsList");
 
+
+    // const answeredQuestions = [
+    //     {
+    //         typeof: "não-lembrei-answered",
+    //         icon:  '<ion-icon name="close-circle"></ion-icon>'
+    //     },
+    //     {
+    //         typeof: "quase-lembrei-answered",
+    //         icon:  '<ion-icon name="help-circle"></ion-icon>'
+    //     },
+    //     {
+    //         typeof: "zap-answered",
+    //         icon:  '<ion-icon name="checkmark-circle"></ion-icon>'
+    //     }
+    // ]
+
+
     if(stage === "questionsList") {
         return (
             <div className="flash-card">
@@ -27,16 +44,42 @@ function FlashCard(props) {
 
     if(stage === "answer") {
         return (
-            <div className="flash-card-answer" onClick={() => setStage("")}>
+            <div className="flash-card-answer">
                 <p>{answer}</p>
                 <div className="buttons-answer">
-                    <button className="nao-lembrei">Não lembrei</button>
-                    <button className="quase-lembrei">Quase não lembrei</button>
-                    <button className="zap">Zap!</button>
+                    <button className="nao-lembrei" onClick={() => setStage("answered-nao-lembrei")}>Não lembrei</button>
+                    <button className="quase-lembrei" onClick={() => setStage("answered-quase-lembrei")}>Quase não lembrei</button>
+                    <button className="zap" onClick={() => setStage("answered-zap")}>Zap!</button>
                 </div>   
             </div>
         );
     }
-}
 
+    if(stage === "answered-nao-lembrei") {
+        return (
+            <div className="flash-card-answered nao-lembrei">
+                <p>{`Pergunta ${questionNumber}`}</p>
+                <ion-icon name="close-circle"></ion-icon>    
+            </div>
+    )
+    }
+
+    if(stage === "answered-quase-lembrei") {
+        return (
+            <div className="flash-card-answered quase-lembrei">
+                <p>{`Pergunta ${questionNumber}`}</p>
+                <ion-icon name="help-circle"></ion-icon>    
+            </div>
+    )
+    }
+
+    if(stage === "answered-zap") {
+        return (
+            <div className="flash-card-answered zap">
+                <p>{`Pergunta ${questionNumber}`}</p>
+                <ion-icon name="checkmark-circle"></ion-icon>    
+            </div>
+    )
+    }
+}
 export default FlashCard;
