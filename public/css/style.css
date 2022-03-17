@@ -89,7 +89,7 @@ header h1 {
 }
 
 
-/* Flash Cards */
+/* Flash Cards Questions List*/
 
 .flash-card {
   height: 40px;
@@ -118,7 +118,6 @@ header h1 {
   height: 15px;
 }
 
-
 .flash-cards .flash-card:first-child {
   margin-top: 37px;
 }
@@ -129,4 +128,177 @@ header h1 {
 
 .flash-cards .flash-card:last-child {
   margin-bottom: 21px;
+}
+
+/* Flash Cards Question  */
+
+.flash-card-question {
+  height: 80px;
+  width: 182px;
+  background: #FFFFD4;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin: 0 auto;
+  position: relative;
+  transition: all .5s;
+  transform-style: preserve-3d;
+}
+
+.flash-cards .flash-card-question:first-child {
+  margin-top: 37px;
+}
+
+.flash-cards .flash-card-question:nth-child(-n+7) {
+  margin-bottom: 14px;
+}
+
+.flash-cards .flash-card-question:last-child {
+  margin-bottom: 21px;
+}
+
+.flash-card-question p {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 13px 0 0 6px;
+} 
+
+.flash-card-question img {
+  width: 20px;
+  height: 13px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0 8px 7px 0;
+}
+
+/* Flash Card Answer  */
+
+.flash-card-answer {
+  min-height: 80px;
+  width: 182px;
+  background: #FFFFD4;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all .5s;
+  transform-style: preserve-3d;
+}
+
+.flash-cards .flash-card-answer:first-child {
+  margin-top: 37px;
+}
+
+.flash-cards .flash-card-answer:nth-child(-n+7) {
+  margin-bottom: 14px;
+}
+
+.flash-cards .flash-card-answer:last-child {
+  margin-bottom: 21px;
+}
+
+
+.flash-card-answer p {
+  text-align: left;
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+  margin: 13px 12px 12px 6px;
+  word-break: break-word;
+}
+
+.buttons-answer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3px;
+  
+}
+
+.buttons-answer>.nao-lembrei {
+  text-align: center;
+  width: 55px;
+  height: 24px;
+  background: #FF3030;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 8px;
+  color: #FFFFFF;
+
+}
+
+.buttons-answer>.quase-lembrei {
+  text-align: center;
+  width: 55px;
+  height: 24px;
+  background: #FF922E;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 8px;
+  color: #FFFFFF;
+}
+
+.buttons-answer>.zap {
+  text-align: center;
+  width: 55px;
+  height: 24px;
+  background: #2FBE34;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 8px;
+  color: #FFFFFF;
+  
+}
+
+/* Footer */
+
+footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background: #FFFFFF;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+
+footer p {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+}
+
+/* Others */
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+.back-face {
+  transform: rotateY(0deg);
 }
