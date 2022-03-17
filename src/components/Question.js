@@ -1,5 +1,0 @@
-function Question() {
-    return (
-
-    );
-}

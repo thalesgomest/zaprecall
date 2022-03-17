@@ -1,12 +1,13 @@
 import HomePage from "./HomePage";
-import Header from "./Header";
+import DeckFlashCards from "./DeckFlashCards";
 
 
 
 function App() {
     return (
         <>
-        <HomePage />
+            <HomePage />
+            <DeckFlashCards />
         </>
     );
 }
