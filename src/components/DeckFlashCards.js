@@ -1,6 +1,7 @@
 import Header from "./Header";
 import FlashCard from "./FlashCard";
 import Footer from "./Footer";
+import { useState } from 'react';
 
 
 const questions = [
@@ -99,15 +100,19 @@ questionsShuffled.forEach((question, index) => {
 
 
 function DeckFlashCards() {
+
+    const [contador, setContador] = useState(0);
+    const [iconsAnswers, setIconsAnswers] = useState([])
     return (
         <>
             <Header />
             <div className="flash-cards">
                 {flashcards.map((flashcard) => (
-                    <FlashCard key={flashcard.questionNumber} questionNumber= {flashcard.questionNumber} question={flashcard.question} answer={flashcard.answer}/>
+                    <FlashCard key={flashcard.questionNumber} contador = {contador} setContador={setContador} iconsAnswers = {iconsAnswers} 
+                    setIconsAnswers = {setIconsAnswers} questionNumber= {flashcard.questionNumber} question={flashcard.question} answer={flashcard.answer}/>
                 ))}
             </div>
-            <Footer />
+            <Footer contador = {contador} iconsAnswers = {iconsAnswers}/>
         </>
     );
 }

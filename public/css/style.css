@@ -353,6 +353,7 @@ footer {
   height: 50px;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content:center;
   background: #FFFFFF;
   box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
@@ -365,14 +366,30 @@ footer p {
   font-size: 12px;
   line-height: 14px;
   color: #333333;
+  margin-bottom: 5px;
+}
+
+
+.icons-answer #nao-lembrei {
+  color: #FF3030;
+}
+
+
+.icons-answer #zap {
+  color: #2FBE34;
+}
+
+
+.icons-answer #quase-lembrei {
+  color: #FF922E;
 }
 
 /* Others */
 
-.front-face {
+/* .front-face {
   transform: rotateY(-180deg);
 }
 
 .back-face {
   transform: rotateY(0deg);
-}
+} */

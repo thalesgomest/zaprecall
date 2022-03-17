@@ -1,11 +1,12 @@
 let numberOfQuestions = 8;
-let completedQuestions = 0;
 
-
-function Footer() {
+function Footer({contador, iconsAnswers}) {
     return (
         <footer>
-            <p>{completedQuestions}/{numberOfQuestions} CONCLUÍDOS</p>
+            <p>{contador}/{numberOfQuestions} CONCLUÍDOS</p>
+            <div className="icons-answer">
+                {iconsAnswers.map((answer) => answer)}
+            </div>
         </footer>
     );
 }
