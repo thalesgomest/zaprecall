@@ -103,8 +103,10 @@ function DeckFlashCards() {
 
     const [contador, setContador] = useState(0);
     const [iconsAnswers, setIconsAnswers] = useState([])
+    
     return (
         <>
+        <div>
             <Header />
             <div className="flash-cards">
                 {flashcards.map((flashcard) => (
@@ -112,7 +114,8 @@ function DeckFlashCards() {
                     setIconsAnswers = {setIconsAnswers} questionNumber= {flashcard.questionNumber} question={flashcard.question} answer={flashcard.answer}/>
                 ))}
             </div>
-            <Footer contador = {contador} iconsAnswers = {iconsAnswers}/>
+        </div>            
+        <Footer contador = {contador} iconsAnswers = {iconsAnswers}/>
         </>
     );
 }
