@@ -2,7 +2,15 @@ let numberOfQuestions = 8;
 let answers = [];
 let contadorZap = 0;
 
-function Footer({contador, iconsAnswers, meta}) {
+function Footer({contador, setContador, iconsAnswers, setIconsAnswers, meta, deDeckAndMeta, setDeckAndMeta, setVisible}) {
+
+    function restartRecall() {
+        // setContador(0);
+        // setIconsAnswers([]);
+        // setDeckAndMeta({meta:"", deck:""});
+        // setVisible(true);
+        document.location.reload(true);
+    }
 
     if(contador !== numberOfQuestions) {
         return (
@@ -30,6 +38,7 @@ function Footer({contador, iconsAnswers, meta}) {
                         <div className="icons-answer">
                             {iconsAnswers.map((answer) => answer)}
                         </div>
+                        <button className="reiniciar" onClick={restartRecall}>REINICAR RECALL</button>
                     </footer>
                 )
             } else {
@@ -42,6 +51,7 @@ function Footer({contador, iconsAnswers, meta}) {
                         <div className="icons-answer">
                             {iconsAnswers.map((answer) => answer)}
                         </div>
+                        <button className="reiniciar" onClick={restartRecall}>REINICAR RECALL</button>
                     </footer>
                 )
                 } else {
@@ -53,6 +63,7 @@ function Footer({contador, iconsAnswers, meta}) {
                         <div className="icons-answer">
                             {iconsAnswers.map((answer) => answer)}
                         </div>
+                        <button className="reiniciar" onClick={restartRecall}>REINICAR RECALL</button>
                     </footer>
                 )
                 }
@@ -66,6 +77,7 @@ function Footer({contador, iconsAnswers, meta}) {
                         <div className="icons-answer">
                             {iconsAnswers.map((answer) => answer)}
                         </div>
+                        <button className="reiniciar" onClick={restartRecall}>REINICAR RECALL</button>
                     </footer>
                 )
             } else {
@@ -78,6 +90,7 @@ function Footer({contador, iconsAnswers, meta}) {
                         <div className="icons-answer">
                             {iconsAnswers.map((answer) => answer)}
                         </div>
+                        <button className="reiniciar" onClick={restartRecall}>REINICAR RECALL</button>
                     </footer>
                 )
                 } else {
@@ -89,6 +102,7 @@ function Footer({contador, iconsAnswers, meta}) {
                         <div className="icons-answer">
                             {iconsAnswers.map((answer) => answer)}
                         </div>
+                        <button className="reiniciar" onClick={restartRecall}>REINICAR RECALL</button>
                     </footer>
                 )
                 }

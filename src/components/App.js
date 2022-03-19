@@ -7,11 +7,12 @@ import { useState } from 'react';
 function App() {
 
     const [deckAndMeta, setDeckAndMeta] = useState({deck:"", meta:""});
+    const [visible, setVisible] = useState(true);
     
     return (
         <>
-            <HomePage deckAndMeta={deckAndMeta} setDeckAndMeta={setDeckAndMeta}/>
-            <DeckFlashCards deckAndMeta={deckAndMeta} />
+            <HomePage visible={visible} setVisible={setVisible} deckAndMeta={deckAndMeta} setDeckAndMeta={setDeckAndMeta}/>
+            <DeckFlashCards deckAndMeta={deckAndMeta} setDeckAndMeta={setDeckAndMeta} setVisible={setVisible}/>
         </>
     );
 }

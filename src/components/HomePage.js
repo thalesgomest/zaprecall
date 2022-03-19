@@ -1,12 +1,20 @@
 import { useState } from 'react';
 
-function HomePage({deckAndMeta, setDeckAndMeta}) {
-    const [visible, setVisible] = useState(true);
+function HomePage({visible, setVisible, deckAndMeta, setDeckAndMeta}) {
+
     const [inputValue, setInputValue] = useState('');
     const [selectValue, setSelectValue] = useState('');
 
     function buttonIniciarRecall() {
-        selectValue === "" ? alert("Selecione um deck válido") : setVisible(false); setDeckAndMeta({deck: selectValue, meta: inputValue})
+        if (selectValue === "") {
+            alert("Selecione um deck válido")
+            return; 
+        } else if (parseInt(inputValue)>8) {
+            alert("A meta máxima de Zaps é 8")
+            return;
+        } else {
+            setVisible(false); setDeckAndMeta({deck: selectValue, meta: inputValue})
+        }
     }
 
     return (

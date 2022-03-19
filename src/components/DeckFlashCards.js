@@ -80,9 +80,6 @@ function comparador() {
 	return Math.random() - 0.5; 
 }
 
-// let questionsShuffled = [...questions];
-// questionsShuffled.sort(comparador);
-
 let questionsDecksShuffled = {...decks};
 questionsDecksShuffled.jsx.sort(comparador);
 questionsDecksShuffled.css.sort(comparador);
@@ -133,14 +130,8 @@ const flashcards = [
     }
 ]
 
-// questionsShuffled.forEach((question, index) => {
-//     flashcards[index].question = question.question;
-//     flashcards[index].answer = question.answer;
-// })
 
-
-function DeckFlashCards({deckAndMeta}) {
-    console.log(deckAndMeta)
+function DeckFlashCards({deckAndMeta, setDeckAndMeta, setVisible}) {
     if (deckAndMeta.deck === "jsx") {
         questionsDecksShuffled.jsx.forEach((question, index) => {
         flashcards[index].question = question.question;
@@ -156,6 +147,7 @@ function DeckFlashCards({deckAndMeta}) {
 
     const [contador, setContador] = useState(0);
     const [iconsAnswers, setIconsAnswers] = useState([])
+
     
     return (
         <>
@@ -168,7 +160,8 @@ function DeckFlashCards({deckAndMeta}) {
                 ))}
             </div>
         </div>            
-        <Footer contador = {contador} iconsAnswers = {iconsAnswers} meta={deckAndMeta.meta}/>
+        <Footer  contador = {contador} setContador={setContador} iconsAnswers = {iconsAnswers} setIconsAnswers={setIconsAnswers} 
+        meta={deckAndMeta.meta} deckAndMeta={deckAndMeta} setDeckAndMeta={setDeckAndMeta} setVisible={setVisible}/>
         </>
     );
 }
