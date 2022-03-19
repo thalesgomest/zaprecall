@@ -60,7 +60,7 @@ body {
   border: 1px solid #D70900;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
-  margin-top: 73px;
+  margin-top: 6px;
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 400;
@@ -69,6 +69,60 @@ body {
   text-align: center;
   color:#D70900;
 }
+
+.home-page #decks {
+  width: 141px;
+  height: 31px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 11px;
+  color: #ADADAD;
+  margin-top: 44px;
+}
+
+#decks:focus {
+  outline: none;
+}
+
+.home-page input {
+  width: 141px;
+  height: 31px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin-top: 6px;
+  border: none;
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 11px;
+  color: #ADADAD;
+}
+
+.home-page input::placeholder {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 11px;
+  color: #ADADAD;
+}
+
+.home-page input:focus {
+  outline: none;
+}
+
+.home-page input:focus::placeholder {
+  color: transparent;
+}
+
+
+
 
 /* Header */
 
@@ -111,6 +165,7 @@ header h1 {
   align-items: center;
   justify-content: space-between;
   padding: 0 6px;
+
 }
 
 .flash-card p {
@@ -143,15 +198,15 @@ header h1 {
 /* Flash Cards Question  */
 
 .flash-card-question {
-  height: 80px;
+  min-height: 80px;
+  overflow-y: auto;
+  height: auto;
   width: 182px;
   background: #FFFFD4;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   margin: 0 auto;
   position: relative;
-  transition: all .5s;
-  transform-style: preserve-3d;
 }
 
 .flash-cards .flash-card-question:first-child {
@@ -167,6 +222,8 @@ header h1 {
 }
 
 .flash-card-question p {
+  text-align: center;
+  word-break: break-word;
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 400;
@@ -176,7 +233,7 @@ header h1 {
   position: absolute;
   top: 0;
   left: 0;
-  margin: 13px 0 0 6px;
+  margin: 13px 6px 0 6px;
 } 
 
 .flash-card-question img {
@@ -202,7 +259,6 @@ header h1 {
   flex-direction: column;
   justify-content: space-between;
   transition: all .5s;
-  transform-style: preserve-3d;
 }
 
 .flash-cards .flash-card-answer:first-child {
@@ -219,7 +275,7 @@ header h1 {
 
 
 .flash-card-answer p {
-  text-align: left;
+  text-align: center;
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 400;
@@ -368,6 +424,7 @@ footer {
 }
 
 footer p {
+  text-align: center;
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 400;

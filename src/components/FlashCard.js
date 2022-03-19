@@ -6,21 +6,23 @@ function FlashCard(props) {
     const {contador, setContador, iconsAnswers, setIconsAnswers, questionNumber, question, answer} = props;
     const [stage, setStage] = useState("questionsList");
 
+    function buttonNaoLembrei() {
+        setContador(contador + 1); 
+        setStage("answered-nao-lembrei"); 
+        setIconsAnswers([...iconsAnswers, <ion-icon id="nao-lembrei" name="close-circle"></ion-icon>])
+    }
 
-    // const answeredQuestions = [
-    //     {
-    //         typeof: "não-lembrei-answered",
-    //         icon:  '<ion-icon name="close-circle"></ion-icon>'
-    //     },
-    //     {
-    //         typeof: "quase-lembrei-answered",
-    //         icon:  '<ion-icon name="help-circle"></ion-icon>'
-    //     },
-    //     {
-    //         typeof: "zap-answered",
-    //         icon:  '<ion-icon name="checkmark-circle"></ion-icon>'
-    //     }
-    // ]
+    function buttonQuaseLembrei() {
+        setContador(contador + 1); 
+        setStage("answered-quase-lembrei"); 
+        setIconsAnswers([...iconsAnswers, <ion-icon id="quase-lembrei" name="help-circle"></ion-icon>])
+    }
+
+    function buttonZap() {
+        setContador(contador + 1); 
+        setStage("answered-zap"); 
+        setIconsAnswers([...iconsAnswers, <ion-icon id="zap" name="checkmark-circle"></ion-icon>])
+    }
 
 
     if(stage === "questionsList") {
@@ -46,9 +48,9 @@ function FlashCard(props) {
             <div className="flash-card-answer">
                 <p>{answer}</p>
                 <div className="buttons-answer">
-                    <button className="nao-lembrei" onClick={() => {setContador(contador + 1); setStage("answered-nao-lembrei"); setIconsAnswers([...iconsAnswers, <ion-icon id="nao-lembrei" name="close-circle"></ion-icon>])}}>Não lembrei</button>
-                    <button className="quase-lembrei" onClick={() => {setContador(contador + 1); setStage("answered-quase-lembrei"); setIconsAnswers([...iconsAnswers, <ion-icon id="quase-lembrei" name="help-circle"></ion-icon>])}}>Quase não lembrei</button>
-                    <button className="zap" onClick={() => {setContador(contador + 1); setStage("answered-zap"); setIconsAnswers([...iconsAnswers, <ion-icon id="zap" name="checkmark-circle"></ion-icon>])}}>Zap!</button>
+                    <button className="nao-lembrei" onClick={buttonNaoLembrei}>Não lembrei</button>
+                    <button className="quase-lembrei" onClick={buttonQuaseLembrei}>Quase não lembrei</button>
+                    <button className="zap" onClick={buttonZap}>Zap!</button>
                 </div>   
             </div>
         );
