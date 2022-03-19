@@ -38,15 +38,16 @@ body {
   font-family: 'Righteous';
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
-  line-height: 31px;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: -0.012em;
   color: #FFFFFF;
 }
 
 .home-page img {
-  width: 55px;
-  height: 65px;
-  margin-bottom: 10px;
+  width: 136px;
+  height: 161px;
+  margin-bottom: 13px;
 }
 
 * button {
@@ -54,13 +55,13 @@ body {
 }
 
 .home-page button {
-  width: 141px;
-  height: 31px;
+  width: 246px;
+  height: 54px;
   background: #FFFFFF;
   border: 1px solid #D70900;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
-  margin-top: 6px;
+  margin-top: 15px;
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 400;
@@ -71,8 +72,8 @@ body {
 }
 
 .home-page #decks {
-  width: 141px;
-  height: 31px;
+  width: 246px;
+  height: 54px;
   background: #FFFFFF;
   border-radius: 5px;
   border: none;
@@ -82,7 +83,7 @@ body {
   font-size: 9px;
   line-height: 11px;
   color: #ADADAD;
-  margin-top: 44px;
+  margin-top: 30px;
 }
 
 #decks:focus {
@@ -90,11 +91,11 @@ body {
 }
 
 .home-page input {
-  width: 141px;
-  height: 31px;
+  width: 246px;
+  height: 54px;
   background: #FFFFFF;
   border-radius: 5px;
-  margin-top: 6px;
+  margin-top: 15px;
   border: none;
   font-family: 'Recursive';
   font-style: normal;
@@ -129,21 +130,21 @@ body {
 header {
   display: flex;
   justify-content: center;
-  margin-top: 19px;
+  margin-top: 48px;
 }
 
 header img {
-  width: 26px;
-  height: 30px;
-  margin-right: 7px;
+  width: 52px;
+  height: 60px;
+  margin-right: 22px;
 }
 
 header h1 {
   font-family: 'Righteous';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 36px;
+  line-height: 45px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -155,8 +156,8 @@ header h1 {
 /* Flash Cards Questions List*/
 
 .flash-card {
-  height: 40px;
-  width: 182px;
+  width: 300px;
+  height: 65px;
   background: #FFFFFF;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
@@ -172,36 +173,35 @@ header h1 {
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  width: 87px;
+  height: 19px;
   color: #333333;
 }
 
 .flash-card ion-icon {
-  width: 13px;
-  height: 15px;
+  width: 20px;
+  height: 23px;
   cursor: pointer;
 }
 
 .flash-cards .flash-card:first-child {
-  margin-top: 37px;
+  margin-top: 51px;
 }
 
 .flash-cards .flash-card:nth-child(-n+7) {
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
 
 .flash-cards .flash-card:last-child {
-  margin-bottom: 21px;
+  margin-bottom: 46px;
 }
 
 /* Flash Cards Question  */
 
 .flash-card-question {
-  min-height: 80px;
-  overflow-y: auto;
+  min-height: 131px;
   height: auto;
-  width: 182px;
+  width: 299px;
   background: #FFFFD4;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
@@ -210,15 +210,15 @@ header h1 {
 }
 
 .flash-cards .flash-card-question:first-child {
-  margin-top: 37px;
+  margin-top: 46px;
 }
 
 .flash-cards .flash-card-question:nth-child(-n+7) {
-  margin-bottom: 14px;
+  margin-bottom: 25px;
 }
 
 .flash-cards .flash-card-question:last-child {
-  margin-bottom: 21px;
+  margin-bottom: 46px;
 }
 
 .flash-card-question p {
@@ -227,30 +227,30 @@ header h1 {
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 18px;
+  line-height: 22px;
   color: #333333;
   position: absolute;
   top: 0;
   left: 0;
-  margin: 13px 6px 0 6px;
+  margin: 18px 15px 0 15px;
 } 
 
 .flash-card-question img {
-  width: 20px;
-  height: 13px;
+  width: 30px;
+  height: 20px;
   position: absolute;
   right: 0;
   bottom: 0;
-  margin: 0 8px 7px 0;
+  margin: 0 15px 6px 0;
   cursor: pointer;
 }
 
 /* Flash Card Answer  */
 
 .flash-card-answer {
-  min-height: 80px;
-  width: 182px;
+  min-height: 131px;
+  width: 299px;
   background: #FFFFD4;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
@@ -262,15 +262,15 @@ header h1 {
 }
 
 .flash-cards .flash-card-answer:first-child {
-  margin-top: 37px;
+  margin-top: 46px;
 }
 
 .flash-cards .flash-card-answer:nth-child(-n+7) {
-  margin-bottom: 14px;
+  margin-bottom: 25px;
 }
 
 .flash-cards .flash-card-answer:last-child {
-  margin-bottom: 21px;
+  margin-bottom: 46px;
 }
 
 
@@ -282,60 +282,61 @@ header h1 {
   font-size: 12px;
   line-height: 14px;
   color: #333333;
-  margin: 13px 12px 12px 6px;
+  margin: 18px 12px 12px 6px;
   word-break: break-word;
 }
 
 .buttons-answer {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 3px;
+  justify-content: center;
+  margin-bottom: 6px;
   
 }
 
 .buttons-answer>.nao-lembrei {
   text-align: center;
-  width: 55px;
-  height: 24px;
+  width: 85.17px;
+  height: 37.17px;
   background: #FF3030;
   border-radius: 5px;
   border: none;
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 400;
-  font-size: 7px;
-  line-height: 8px;
+  font-size: 12px;
+  line-height: 14px;
   color: #FFFFFF;
 
 }
 
 .buttons-answer>.quase-lembrei {
   text-align: center;
-  width: 55px;
-  height: 24px;
+  width: 85.17px;
+  height: 37.17px;
   background: #FF922E;
   border-radius: 5px;
   border: none;
+  margin: 0 7.74px 0 7.74px;
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 400;
-  font-size: 7px;
-  line-height: 8px;
+  font-size: 12px;
+  line-height: 14px;
   color: #FFFFFF;
 }
 
 .buttons-answer>.zap {
   text-align: center;
-  width: 55px;
-  height: 24px;
+  width: 85.17px;
+  height: 37.17px;
   background: #2FBE34;
   border-radius: 5px;
   border: none;
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 400;
-  font-size: 7px;
-  line-height: 8px;
+  font-size: 12px;
+  line-height: 14px;
   color: #FFFFFF;
 }
 
@@ -343,8 +344,8 @@ header h1 {
 /* Flash Card Answered */
 
 .flash-card-answered {
-  height: 40px;
-  width: 182px;
+  width: 300px;
+  height: 65px;
   background: #FFFFFF;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
@@ -352,34 +353,34 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 6px;
+  padding: 0 15px;
 }
 
 .flash-card-answered p {
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 19px;
   color: #333333;
 }
 
 .flash-card-answered-answered ion-icon {
-  width: 13px;
-  height: 15px;
+  width: 23px;
+  height: 23px;
   cursor: pointer;
 }
 
 .flash-cards .flash-card-answered:first-child {
-  margin-top: 37px;
+  margin-top: 51px;
 }
 
 .flash-cards .flash-card-answered:nth-child(-n+7) {
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
 
 .flash-cards .flash-card-answered:last-child {
-  margin-bottom: 21px;
+  margin-bottom: 179px;
 }
 
 .flash-card-answered.nao-lembrei p {
@@ -389,6 +390,8 @@ header h1 {
 
 .flash-card-answered.nao-lembrei ion-icon {
   color: #FF3030;
+  width: 23px;
+  height: 23px;
 }
 
 .flash-card-answered.quase-lembrei p {
@@ -398,6 +401,8 @@ header h1 {
 
 .flash-card-answered.quase-lembrei ion-icon {
   color: #FF922E;
+  width: 23px;
+  height: 23px;
 }
 
 .flash-card-answered.zap p {
@@ -407,13 +412,15 @@ header h1 {
 
 .flash-card-answered.zap ion-icon {
   color: #2FBE34;
+  width: 23px;
+  height: 23px;
 }
 
 /* Footer */
 
 footer {
   width: 100%;
-  min-height: 50px;
+  min-height: 70px;
   display: flex;
   align-items: center;
   justify-content:center;
@@ -428,14 +435,14 @@ footer p {
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 18px;
+  line-height: 22px;
   color: #333333;
   margin-bottom: 5px;
 }
 
 .final-msg {
-  min-height: 112px;
+  min-height: 171px;
   background: #FFFFFF;
   box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.15);
 }
@@ -444,8 +451,8 @@ footer p {
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 18px;
+  line-height: 22px;
   color: #333333;
 }
 
@@ -453,16 +460,22 @@ footer p {
 
 .icons-answer #nao-lembrei {
   color: #FF3030;
+  width: 23px;
+  height: 23px;
 }
 
 
 .icons-answer #zap {
   color: #2FBE34;
+  width: 23px;
+  height: 23px;
 }
 
 
 .icons-answer #quase-lembrei {
   color: #FF922E;
+  width: 23px;
+  height: 23px;
 }
 
 /* Others */

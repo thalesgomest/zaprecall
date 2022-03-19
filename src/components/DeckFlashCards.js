@@ -140,6 +140,7 @@ const flashcards = [
 
 
 function DeckFlashCards({deckAndMeta}) {
+    console.log(deckAndMeta)
     if (deckAndMeta.deck === "jsx") {
         questionsDecksShuffled.jsx.forEach((question, index) => {
         flashcards[index].question = question.question;

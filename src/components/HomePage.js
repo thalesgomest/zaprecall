@@ -19,7 +19,7 @@ function HomePage({deckAndMeta, setDeckAndMeta}) {
                 <option value="jsx">JSX</option>
                 <option value="css">CSS</option>
             </select>
-            <input type="number" min="0" placeholder="Digite sua meta de zaps..." onChange={e => setInputValue(e.target.value)}></input>
+            <input type="number" min="0" max="8" placeholder="Digite sua meta de zaps..." onChange={e => setInputValue(e.target.value)}></input>
             <button onClick={buttonIniciarRecall}>Iniciar Recall!</button>
         </div>
         : <></>
