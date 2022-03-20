@@ -1,7 +1,6 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/97575616/159168337-db954903-5c89-45d4-aae7-7ac410f00e10.png" width="600px" alt="">
 </p>
-![zaprecall-title]()
 
 <h1 align="center">ZapRecall</h1>
 
