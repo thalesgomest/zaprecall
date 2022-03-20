@@ -15,6 +15,7 @@
 ## Table of contents
 * [Project Description](#project-description)
 * [Status](#status)
+* [Mockup](#mockup)
 * [Requirements](#requirements)
 * [Author](#author)
 
@@ -27,7 +28,13 @@ When we instantly remember a flashcard, we get a "Zap!"⚡</p>
 ### Status
 ![status-finished](https://user-images.githubusercontent.com/97575616/152926720-d042178b-24c0-4d6b-94fb-0ccbd3c082cc.svg)
 
-### Desktop Layout App
+
+### Mockup
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/97575616/159169818-c708670e-605a-4390-8084-c66db1c15ec0.png" alt="mockup">
+</div>
+
+### Desktop Layout Application
 <div align="center">
   <img src="https://user-images.githubusercontent.com/97575616/159168566-fd960f4c-d011-4ce1-9858-771273f3f1dd.gif" alt="app-desktop-layout">
 </div>
