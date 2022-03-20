@@ -110,7 +110,6 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 11px;
   color: #ADADAD;
 }
 
@@ -505,16 +504,20 @@ footer p {
 .home-page #decks {
   width: 246px;
   height: 54px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 
 .home-page input {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .home-page input::placeholder {
-  font-size: 10px;
+  font-size: 16px;
+}
+
+.home-page button {
+  font-size: 20px;
 }
 
 footer {
