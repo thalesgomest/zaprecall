@@ -131,7 +131,7 @@ const flashcards = [
 ]
 
 
-function DeckFlashCards({deckAndMeta, setDeckAndMeta, setVisible}) {
+function DeckFlashCards({deckAndMeta, setDeckAndMeta, visible, setVisible}) {
     if (deckAndMeta.deck === "jsx") {
         questionsDecksShuffled.jsx.forEach((question, index) => {
         flashcards[index].question = question.question;
@@ -147,6 +147,7 @@ function DeckFlashCards({deckAndMeta, setDeckAndMeta, setVisible}) {
 
     const [contador, setContador] = useState(0);
     const [iconsAnswers, setIconsAnswers] = useState([])
+    
 
     
     return (
@@ -156,7 +157,7 @@ function DeckFlashCards({deckAndMeta, setDeckAndMeta, setVisible}) {
             <div className="flash-cards">
                 {flashcards.map((flashcard) => (
                     <FlashCard key={flashcard.questionNumber} contador = {contador} setContador={setContador} iconsAnswers = {iconsAnswers} 
-                    setIconsAnswers = {setIconsAnswers} questionNumber= {flashcard.questionNumber} question={flashcard.question} answer={flashcard.answer}/>
+                    setIconsAnswers = {setIconsAnswers} visible={visible} questionNumber= {flashcard.questionNumber} question={flashcard.question} answer={flashcard.answer}/>
                 ))}
             </div>
         </div>            

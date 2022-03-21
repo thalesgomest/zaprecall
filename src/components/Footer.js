@@ -5,11 +5,10 @@ let contadorZap = 0;
 function Footer({contador, setContador, iconsAnswers, setIconsAnswers, meta, deDeckAndMeta, setDeckAndMeta, setVisible}) {
 
     function restartRecall() {
-        // setContador(0);
-        // setIconsAnswers([]);
-        // setDeckAndMeta({meta:"", deck:""});
-        // setVisible(true);
-        document.location.reload(true);
+        setContador(0);
+        setIconsAnswers([]);
+        setDeckAndMeta({meta:"", deck:""});
+        setVisible(true);
     }
 
     if(contador !== numberOfQuestions) {

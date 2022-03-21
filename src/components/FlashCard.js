@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function FlashCard(props) {
 
-    const {contador, setContador, iconsAnswers, setIconsAnswers, questionNumber, question, answer} = props;
+    const {contador, setContador, iconsAnswers, setIconsAnswers, questionNumber, question, answer, visible} = props;
     const [stage, setStage] = useState("questionsList");
+    useEffect(() => { setStage("questionsList")
+    },[visible])
 
     function buttonNaoLembrei() {
         setContador(contador + 1); 

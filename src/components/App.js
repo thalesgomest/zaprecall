@@ -12,7 +12,7 @@ function App() {
     return (
         <>
             <HomePage visible={visible} setVisible={setVisible} deckAndMeta={deckAndMeta} setDeckAndMeta={setDeckAndMeta}/>
-            <DeckFlashCards deckAndMeta={deckAndMeta} setDeckAndMeta={setDeckAndMeta} setVisible={setVisible}/>
+            <DeckFlashCards deckAndMeta={deckAndMeta} setDeckAndMeta={setDeckAndMeta} visible={visible} setVisible={setVisible}/>
         </>
     );
 }
