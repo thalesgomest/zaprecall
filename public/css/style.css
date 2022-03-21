@@ -189,7 +189,7 @@ header h1 {
 }
 
 .flash-cards .flash-card:last-child {
-  margin-bottom: 46px;
+  margin-bottom: 95px;
 }
 
 /* Flash Cards Question  */
@@ -213,7 +213,7 @@ header h1 {
 }
 
 .flash-cards .flash-card-question:last-child {
-  margin-bottom: 46px;
+  margin-bottom: 95px;
 }
 
 .flash-card-question p {
@@ -265,7 +265,7 @@ header h1 {
 }
 
 .flash-cards .flash-card-answer:last-child {
-  margin-bottom: 46px;
+  margin-bottom: 95px;
 }
 
 
@@ -375,7 +375,7 @@ header h1 {
 }
 
 .flash-cards .flash-card-answered:last-child {
-  margin-bottom: 179px;
+  margin-bottom: 269px;
 }
 
 .flash-card-answered.nao-lembrei p {
@@ -573,7 +573,7 @@ header h1 {
 }
 
 .flash-cards .flash-card:last-child {
-  margin-bottom: 253px;
+  margin-bottom: 134px;
 }
 
 .flash-card-question {
@@ -591,7 +591,7 @@ header h1 {
 
 
 .flash-cards .flash-card-question:last-child {
-  margin-bottom: 253px;
+  margin-bottom: 134px;
 }
 
 .flash-card-question p {
@@ -618,7 +618,7 @@ header h1 {
 }
 
 .flash-cards .flash-card-answer:last-child {
-  margin-bottom: 253px;
+  margin-bottom: 134px;
 }
 
 
@@ -646,7 +646,7 @@ header h1 {
 }
 
 .flash-cards .flash-card-answered:last-child {
-  margin-bottom: 253px;
+  margin-bottom: 260px;
 }
 
 .icons-answer #nao-lembrei {
