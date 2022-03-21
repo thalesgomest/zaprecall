@@ -423,6 +423,8 @@ footer {
   background: #FFFFFF;
   box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
   height: 50px;
+  position: fixed;
+  bottom: 0
 }
 
 footer p {
@@ -504,16 +506,20 @@ footer p {
 .home-page #decks {
   width: 246px;
   height: 54px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 
 .home-page input {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .home-page input::placeholder {
-  font-size: 10px;
+  font-size: 16px;
+}
+
+.home-page button {
+  font-size: 20px;
 }
 
 footer {
@@ -692,15 +698,9 @@ header h1 {
   height: 37.17px;
 }
 
+.reiniciar {
+  width: 246px;
+  height: 54px;
+  font-size: 20px;
 }
-
-
-/* Others */
-
-/* .front-face {
-  transform: rotateY(-180deg);
 }
-
-.back-face {
-  transform: rotateY(0deg);
-} */
