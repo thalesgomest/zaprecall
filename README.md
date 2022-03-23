@@ -36,10 +36,10 @@ When we instantly remember a flashcard, we get a "Zap!"⚡</p>
   <img src="https://user-images.githubusercontent.com/97575616/159169818-c708670e-605a-4390-8084-c66db1c15ec0.png" alt="mockup">
 </div>
 
-### Desktop Layout Application
+<!-- ### Desktop Layout Application
 <div align="center">
   <img src="https://user-images.githubusercontent.com/97575616/159168566-fd960f4c-d011-4ce1-9858-771273f3f1dd.gif" alt="app-desktop-layout">
-</div>
+</div> -->
 
   
 ## Requirements
