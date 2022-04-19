@@ -79,6 +79,23 @@ When we instantly remember a flashcard, we get a "Zap!"⚡</p>
   - [x] Target of zaps
   - [x] Deck Choice
 
+## How to run
+
+1. Clone this repository
+2. Install dependencies
+```bash
+npm i
+```
+3. Run the project with
+```bash
+npm start
+```
+4. You can optionally build the project running
+```bash
+npm run build
+```
+5. Finally access http://localhost:3000 on your favorite browser 
+
 
 ### Author
 ---
